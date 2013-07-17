@@ -37,7 +37,7 @@ namespace StudentSystem
             set { courses = value; }
         }
 
-        public ICollection<Homework> Homeworks
+        public virtual ICollection<Homework> Homeworks
         {
             get { return homeworks; }
             set { homeworks = value; }

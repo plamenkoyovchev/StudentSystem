@@ -15,7 +15,7 @@ namespace StudentSystem
         }
 
         public Course(string name, string description, IList materials)
-            : base()
+            : this()
         {
             this.Name = name;
             this.Description = description;
@@ -40,7 +40,7 @@ namespace StudentSystem
             set { students = value; }
         }
 
-        public ICollection<Homework> Homeworks
+        public virtual ICollection<Homework> Homeworks
         {
             get { return homeworks; }
             set { homeworks = value; }
