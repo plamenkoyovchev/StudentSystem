@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
 namespace StudentSystem
@@ -23,10 +24,13 @@ namespace StudentSystem
             this.homeworks = new HashSet<Homework>();
         }
 
+        [Key]
         public int Id { get; set; }
 
+        [Required]
         public string Name { get; set; }
 
+        [Required]
         public int Number { get; set; }
 
         //public Course Course { get; set; }
@@ -42,6 +46,5 @@ namespace StudentSystem
             get { return homeworks; }
             set { homeworks = value; }
         }
-
     }
 }

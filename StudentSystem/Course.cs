@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace StudentSystem
 {
@@ -23,10 +24,13 @@ namespace StudentSystem
             this.homeworks = new HashSet<Homework>();
         }
 
+        [Key]
         public int Id { get; set; }
 
+        [Required]
         public string Name { get; set; }
 
+        [Required]
         public string Description { get; set; }
 
         public IList Materials { get; set; }

@@ -18,4 +18,3 @@ public class StudentContext : DbContext
 
     public DbSet<Homework> Homeworks { get; set; }
 }
-
