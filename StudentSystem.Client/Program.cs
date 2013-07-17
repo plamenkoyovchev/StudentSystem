@@ -26,4 +26,3 @@ internal class Program
         db.SaveChanges();
     }
 }
-

@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace StudentSystem
 {
@@ -12,11 +10,16 @@ namespace StudentSystem
 
         private ICollection<Homework> homeworks;
 
+        public Student()
+        {
+            this.courses = new HashSet<Course>();      
+        }
+
         public Student(string name, int number)
+            : this()
         {
             this.Name = name;
             this.Number = number;
-            this.courses = new HashSet<Course>();
             this.homeworks = new HashSet<Homework>();
         }
 
@@ -39,6 +42,6 @@ namespace StudentSystem
             get { return homeworks; }
             set { homeworks = value; }
         }
-        
+
     }
 }

@@ -31,6 +31,7 @@ namespace StudentSystemContext.Migrations
 
             context.Courses.AddOrUpdate(new Course() { Name = "Databases", Description = "SQL, MySQL, Mongo DB, EntityFramework, ADO.NET" });
             context.Courses.AddOrUpdate(new Course() { Name = "Support", Description = "Working with clients." });
+            context.Students.AddOrUpdate(new Student("dsajdsasda", 2222));
         }
     }
 }
